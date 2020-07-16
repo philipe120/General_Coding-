@@ -1,0 +1,49 @@
+<html>
+   <head>
+   <style>
+   td{
+      text-align:center;
+   }
+   </style>
+   <body>
+      <form name="cal">
+         <table>
+            <tr>
+            <td colspan="4">
+               <input type="text" name="view" id="view" disabled>
+            </td>
+            </tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="position"><input type="button" id="clear" name="clear" value="C" onclick="cal.view.value = ''"></td>
+            <tr>
+            <td><input type="button" name="one" value="7" onclick="cal.view.value += '7'"></td>
+            <td><input type="button" name="two" value="8" onclick="cal.view.value += '8'"></td>
+            <td><input type="button" name="three" value="9" onclick="cal.view.value += '9'"></td>
+            <td><input type="button" name="addition" value="+" onclick="cal.view.value += '+'"></td>
+            </tr>
+            <tr>
+            <td><input type="button" name="four" value="4" onclick="cal.view.value += '4'"></td>
+            <td><input type="button" name="five" value="5" onclick="cal.view.value += '5'"></td>
+            <td><input type="button" name="six" value="6" onclick="cal.view.value += '6'"></td>
+            <td><input type="button" name="subtraction" value="-" onclick="cal.view.value += '-'"></td>
+            </tr>
+            <tr>
+            <td><input type="button" name="seven" value="1" onclick="cal.view.value += '1'"></td>
+            <td><input type="button" name="eight" value="2" onclick="cal.view.value += '2'"></td>
+            <td><input type="button" name="nine" value="3" onclick="cal.view.value += '3'"></td>
+            <td><input type="button" name="multiply" value="x" onclick="cal.view.value += '*'"></td>
+            </tr>
+            <tr>
+            <td><input type="button" name="dot" value="." onclick="cal.view.value += '.'"></td>
+            <td><input type="button" name="zero" value="0" onclick="cal.view.value += '0'"></td>
+            <td><input type="button" name="equal" value="=" onclick="cal.view.value = eval(cal.view.value)"></td>
+            <td><input type="button" name="divide" value="/" onclick="cal.view.value += '/'"></td>
+            </tr>
+         </table>
+      </form>
+   </body>
+   </head>
+</html>
+
